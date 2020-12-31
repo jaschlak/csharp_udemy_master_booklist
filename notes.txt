@@ -1,0 +1,15 @@
+switching from MSSQL to sqlite, can't comment in json
+
+The following is changed in appsettings.json
+
+"ConnectionStrings": {
+    "DefaultConnection": "Server=SATURN\\SQLEXPRESS;Database=booklist_db;Trusted_Connection=True;MultipleActiveResultSets=True"
+},
+
+
+TO
+
+"ConnectionStrings": {
+    "DefaultConnection": "DataSource=app.db"
+},
+

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Data;
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
 namespace booklist.Model
@@ -16,5 +18,8 @@ namespace booklist.Model
         {
             
         }
+
+        public DbSet<Book> Book { get; set; }
+
     }
 }
